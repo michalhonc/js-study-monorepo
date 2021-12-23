@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #080808;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Container {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.Anime {
+  opacity: 0;
+  text-align: left;
+  font-size: 12vw;
+  animation: Complex 1s forwards 2s;
+}
+
+@keyframes Complex {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-variation-settings: "WIDE" 1000;
+  }
+  20% {
+    font-variation-settings: "WIDE" 1000;
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  85% {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  95% {
+    font-variation-settings: "WIDE" 0;
+    -webkit-text-stroke: 0px transparent;
+    color: white;
+  }
+  100% {
+    opacity: 1;
+    font-variation-settings: "WIDE" 0;
+  }
+}
+
+@keyframes Wide {
+  from {
+    font-variation-settings: "WIDE" 1000;
+  }
+  to {
+    font-variation-settings: "WIDE" 0;
+  }
+}
+

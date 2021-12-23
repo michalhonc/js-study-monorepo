@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+    - '12'
+cache:
+  directories:
+  - node_modules
+
+script:
+  - npm run test
+  - npm run build
+
+deploy:
+  provider: heroku
+  app: mh-tutorial-cicd
+  local_dir: build
+  api_key:
+    secure: fUoPl4CTozVi6HioRc22bJNhlHBqyT6ZlAMZXZa5dS9YHHnd7u4Pk6/qvN+lUUKOqJmwx5rnN9+jLQci8/riZ+CYV9ZPNg7MUFr8NVzG6QGjzDwF/2RpuouJuqL+o8TdaEq59VQeQLlstL6biVuQsNpp0h4EKHxHUkaUuNFuPsAfeI+wFqSlxcyHkJAJj+b5PWzZE/x2yTjg82ODqBuGoY9shQcHk8kX0i8rW0BXAqI9P1RxBfpI/wlyaStR1NvGcnmxNNPPeTMkoAisbeyC1mab983p78xeviIG0gs44cVXhFbwOSBUmrtDCQAPP3ys4PvcjLG1udLotI0mhYF6ZirKipvhY9hG6TX0aUVT5T/SxAynhH98t3dTgcBtP9rjOmnGtD+BBfB4JX4zZ9wp67BL/XkFVlaAKlH7PiRHvcXFvsAA9oYEnJkV/nBKHj7lqdPRiYUgRXIBCOkkRhijc1GPKksTREOGabrZ7kCGPl0uvLzIjER6UM91yCkzDsBgCRwtltzYYvucKstNcm3g1YiSY69HP7DDAzZmmS/w5O3JZrrVkRUIM9/wQs9pm1tIBjNZSt6RNkPzRPpl234FUEpJoVKmSeO8u0Jn/H8Lx0TkpDmv9k8g2pqZZkdy4HQhmr2Q0JcdOUK23VFExg/bj/RFgQBwJ8u4f3nXKsTUNE8=
