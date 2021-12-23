@@ -1,0 +1,12 @@
+body {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+form > * {
+  margin: 10px 0;
+}
+
+img {
+  margin: 10px;
+}

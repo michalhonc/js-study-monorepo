@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Mars Rover photos</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  
+  <!--  Form  -->
+  <form id="form">
+    <!--  Date  -->
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="earth_date">
+    
+    <br>
+    
+    <!--  Camera  -->
+    <label for="camera">Choose a camera:</label>
+    <select name="camera" id="camera">
+        <option value="">--Please choose an option--</option>
+        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+        <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+        <option value="MAST">Mast Camera</option>
+        <option value="CHEMCAM">Chemistry and Camera Complex</option>
+        <option value="MAHLI">Mars Hand Lens Imager</option>
+        <option value="MARDI">Mars Descent Imager</option>
+        <option value="NAVCAM">Navigation Camera</option>
+        <option value="PANCAM">Panoramic Camera</option>
+        <option value="MINITES">Miniature Thermal Emission Spectrometer (Mini-TES)	</option>
+    </select>
+    
+    <br>
+        
+    <!--  Submit  -->
+    <input type="submit" value="Get images">
+
+  </form>
+  
+  <!--  Element for "not found" text  -->
+  <div id="notFound"></div>
+  
+  <!--  Element for loading text  -->
+  <div id="loading"></div>
+  
+  <hr>
+  
+  <!--  Wrapper for images from API  -->
+  <div id="images"></div>
+  
+  <!-- Script for logic -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>

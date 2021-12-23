@@ -1,0 +1,18 @@
+.Feed {
+    max-width: 600px;
+}
+
+.Feed-item {
+    display: flex;
+    margin: 60px 0;
+}
+
+.Feed img {
+    width: 60px;
+    padding-right: 15px;
+    flex-shrink: 0;
+}
+
+.Feed h3 {
+    margin: 0;
+}
