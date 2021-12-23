@@ -1,0 +1,72 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "commonjs": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+        "__DEV__": true,
+        "__MANIFEST__": true,
+        "__PATH__": true,
+        "__VERSION__": true,
+        "__ISPROD__": true,
+        "__IS_SERVER__": true,
+        "__ENV__": true
+    },
+    "overrides": [
+        {
+            "files": ["**/*.test.js", "**/*.test.jsx"],
+            "env": {
+                "browser": true,
+                "es6": true,
+                "commonjs": true,
+                "jest": true
+            }
+        }
+    ],
+    "rules": {
+        "react/jsx-indent-props": "off",
+        "react/jsx-first-prop-new-line": "off",
+        "react/jsx-filename-extension": "off",
+        "react/prefer-stateless-function": "off",
+        "react/forbid-prop-types": "off",
+
+        "jsx-a11y/anchor-has-content": "off",
+        "jsx-a11y/label-has-for": [1, {
+            "allowChildren": true
+        }],
+
+        "indent": ["warn", 4, {"SwitchCase": 1}],
+        "max-len": ["warn", 120],
+        "no-mixed-spaces-and-tabs": "error",
+        "react/jsx-indent": "off",
+        "no-tabs": "off",
+        "no-underscore-dangle": "off",
+        "space-before-function-paren": "off",
+        "space-before-blocks": "off",
+        "func-names": "off",
+        "no-param-reassign": "off",
+        "no-plusplus": "off",
+        "keyword-spacing": "off",
+        "import/no-named-as-default": "off",
+        "prefer-template": "warn",
+        "comma-dangle": "off",
+        "prefer-const": "warn",
+        "one-var": "off",
+        "arrow-body-style": "off",
+        "arrow-parens": ["error", "always"],
+        "class-methods-use-this": "off"
+    }
+}

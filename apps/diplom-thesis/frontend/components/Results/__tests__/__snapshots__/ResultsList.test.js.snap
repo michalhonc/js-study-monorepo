@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultsList render 5 items 1`] = `
+Array [
+  <ul
+    className="ResultsList__StyledList-sc-1lpwubp-1 eolDkk"
+  >
+    <li
+      className="ResultsList__StyledListItem-sc-1lpwubp-0 blEIsL"
+    >
+      <span>
+        1
+        .
+      </span>
+      <span>
+        Dotaz 1
+      </span>
+      <span>
+        12
+        tis.
+      </span>
+    </li>
+    <li
+      className="ResultsList__StyledListItem-sc-1lpwubp-0 blEIsL"
+    >
+      <span>
+        2
+        .
+      </span>
+      <span>
+        Dotaz 1
+      </span>
+      <span>
+        12
+        tis.
+      </span>
+    </li>
+    <li
+      className="ResultsList__StyledListItem-sc-1lpwubp-0 blEIsL"
+    >
+      <span>
+        3
+        .
+      </span>
+      <span>
+        Dotaz 1
+      </span>
+      <span>
+        12
+        tis.
+      </span>
+    </li>
+    <li
+      className="ResultsList__StyledListItem-sc-1lpwubp-0 blEIsL"
+    >
+      <span>
+        4
+        .
+      </span>
+      <span>
+        Dotaz 1
+      </span>
+      <span>
+        12
+        tis.
+      </span>
+    </li>
+    <li
+      className="ResultsList__StyledListItem-sc-1lpwubp-0 blEIsL"
+    >
+      <span>
+        5
+        .
+      </span>
+      <span>
+        Dotaz 1
+      </span>
+      <span>
+        12
+        tis.
+      </span>
+    </li>
+  </ul>,
+  <button
+    className="ResultsList__StyledButton-sc-1lpwubp-2 bEdYZA"
+    onClick={[Function]}
+  >
+    Zobrazit další
+  </button>,
+]
+`;

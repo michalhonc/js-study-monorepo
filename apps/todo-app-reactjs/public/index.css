@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  min-height: 100%;
+  position: relative;
+  font-family: 'Karla', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  position: relative;
+  text-align: center;
+  left: 25%;
+  width: 50%;
+  background-color: #3CBC8D;
+  border: 1px solid #eee;
+  color: white;
+  border-radius: 1em;
+  padding: 0.5em 0;
+}
+
+.container {
+  max-width: 40em;
+  margin: 2em auto 0 auto;
+}
+
+.add{
+  width: auto;
+}
+
+.add form {
+  margin: auto;
+  width: max-content
+}
+
+.textfield {
+  background-color: #3CBC8D;
+  color: white;
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.5em 1.5em;
+}
+
+.textfield:focus {
+  outline: none;
+}
+
+.submit {
+  background-color: #3CBC8D;
+  border: none;
+  color: white;
+  font-size: 1em;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  padding: 1em;
+  margin-left: 1em;
+  opacity: 1
+}
+
+.submit:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  outline: none;
+}
+
+::placeholder {
+  color: #eee;
+}
+
+.todo-list ul {
+  padding: 15px; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(7em, auto);
+  background-color: #3CBC8D;
+  border-radius: 1em; 
+}
+
+.todo-list ul li {
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-auto-rows: minmax(60px, auto);
+  border-radius: 2px; 
+}
+
+.todo-list input {
+  border: none; 
+}
+
+.item {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  padding: 1em;
+}
+
+.change {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.delete {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: red;
+}
+
+.inactive label {
+  background-color: rgb(196, 196, 196);
+  text-decoration: line-through;
+}

@@ -1,0 +1,93 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "commonjs": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+        "__DEV__": true,
+        "__MANIFEST__": true,
+        "__PATH__": true,
+        "__VERSION__": true,
+        "__ISPROD__": true,
+        "__IS_SERVER__": true,
+        "__BUILD_HASH__": true
+    },
+    "overrides": [
+        {
+            "files": ["**/*.test.js", "**/*.test.jsx"],
+            "env": {
+                "browser": true,
+                "es6": true,
+                "commonjs": true,
+                "jest": true
+            },
+            "rules":{
+                "no-useless-computed-key": "off"
+            }
+        },
+        {
+            "files": ["**/index.js", "**/index.jsx"],
+            "rules": {
+                "import/prefer-default-export": "off"
+            }
+        }
+    ],
+    "rules": {
+        "react/jsx-indent-props": "off",
+        "react/jsx-first-prop-new-line": "off",
+        "react/jsx-filename-extension": "off",
+        "react/prefer-stateless-function": "off",
+        "react/forbid-prop-types": "off",
+        "react/no-did-mount-set-state": "off",
+        "react/jsx-wrap-multilines": ["off", {
+            "declaration": "parens-new-line",
+            "assignment": "parens-new-line",
+            "return": "parens-new-line",
+            "arrow": "parens-new-line",
+            "condition": "parens-new-line",
+            "logical": "parens-new-line",
+            "prop": "parens-new-line"
+        }],
+        "react/destructuring-assignment": "off",
+
+        "jsx-a11y/anchor-has-content": "off",
+        "jsx-a11y/label-has-for": [1, {
+            "allowChildren": true
+        }],
+
+        "indent": ["warn", 4, {"SwitchCase": 1}],
+        "max-len": ["warn", 120],
+        "no-mixed-spaces-and-tabs": "error",
+        "react/jsx-indent": "off",
+        "no-tabs": "off",
+        "no-underscore-dangle": "off",
+        "space-before-function-paren": "off",
+        "func-names": "off",
+        "no-param-reassign": "off",
+        "no-plusplus": "off",
+        "import/no-named-as-default": "off",
+        "prefer-template": "warn",
+        "comma-dangle": 1,
+        "prefer-const": "warn",
+        "one-var": "off",
+        "arrow-body-style": "off",
+        "arrow-parens": ["error", "always"],
+        "class-methods-use-this": "off",
+        "space-before-blocks": "warn",
+        "keyword-spacing": "warn",
+        "operator-linebreak": "warn",
+    }
+}
